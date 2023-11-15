@@ -1,0 +1,4 @@
+# .gitignore
+
+# Ignore db_config.php file
+db_config.php
