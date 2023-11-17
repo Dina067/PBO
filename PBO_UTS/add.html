@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>Tambah Data</title>
+    <style type="text/css">
+      * {
+        font-family: "Trebuchet MS";
+      }
+      h1 {
+        text-transform: uppercase;
+        color: #003d5b;
+      }
+      a {
+          background-color: salmon;
+          color: #fff;
+          padding: 10px;
+          text-decoration: none;
+          font-size: 12px;
+          border: 0px;
+          margin-top: 20px;
+      }
+      tabel {
+        margin-top: 30px;
+        float: left;
+        text-align: left;
+        width: 100%;
+      }
+      td {
+        padding: 16px;
+        width: 10%;
+        box-sizing: border-box;
+        background: #003d5b;
+        border: 2px solid #ccc;
+        outline-color: salmon;
+      }
+      tr {
+        color: #edae49;
+      }
+      
+      .base {
+        width: 400px;
+        height: auto;
+        padding: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #ededed;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="index.php">Beranda</a>
+    <br /><br />
+<h1 style="text-align: center;">Tambah Data Mahasiswa</h1>
+    <form
+      action="add.php"
+      method="post"
+      name="form1"
+      enctype="multipart/form-data"
+    >
+      <center><table class="base" border="0">
+        <tr>
+          <td>Nama</td>
+          <td><input type="text" name="nama" /></td>
+        </tr>
+        <tr>
+          <td>Umur</td>
+          <td><input type="text" name="umur" /></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input type="text" name="email" /></td>
+        </tr>
+        <tr>
+          <td>Gambar</td>
+          <td><input type="file" name="gambar" /></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><input type="submit" name="Submit" value="Add" /></td>
+        </tr>
+      </table></center>
+    </form>
+  </body>
+</html>
